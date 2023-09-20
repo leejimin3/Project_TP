@@ -20,11 +20,11 @@ public:
 		static FVector ConvertLocation(FVector const& Location, AActor* Portal, AActor* Target);
 
 	UFUNCTION(BlueprintCallable)
-		static FRotator ConvertRotation(FVector const& Rotation, AActor* Portal, AActor* Target);
+		static FRotator ConvertRotation(FRotator const& Rotation, AActor* Portal, AActor* Target);
 
 	UFUNCTION(BlueprintCallable)
 		static bool CheckIsInFront(FVector const& Point, FVector const& PortalLocation, FVector const& PortalNormal);
 
 	UFUNCTION(BlueprintCallable)
-		static bool CheckIsCrossing(FVector const& Point, FVector const& PortalLocation, FVector const& PortalNormal, bool& out_LastInFront, FVector& out _LastPosition);
+		static bool CheckIsCrossing(FVector const& Point, FVector const& PortalLocation, FVector const& PortalNormal, bool& out_LastInFront, FVector& out_LastPosition);
 };
